@@ -1,0 +1,18 @@
+.prompt {
+	text-transform: lowercase;
+	color: #7FF709;
+	/* background-color: #000; */
+	font-family: "Roboto Mono", "Droid Sans Mono", "Inconsolata", monospace;
+	margin-left: 10px;
+}
+
+.terminput {
+	color: #7FF709;
+	background-color: #000;
+	border: none;
+	/* width: 100%; */
+}
+
+.terminput:focus {
+	outline: none;
+}

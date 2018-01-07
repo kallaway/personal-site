@@ -1,0 +1,60 @@
+.social ul {
+    list-style-type: none;
+    /* display: inline-block; */
+    display: flex;
+    margin-left: 0;
+    justify-content: center;
+}
+
+.social ul > li {
+    margin: 5px;
+    
+}
+
+.social li a {
+	text-decoration: none;
+	color: #777;
+}
+
+.tw a:hover {
+	color: #00a3ec;
+}
+
+.ig a:hover {
+	color: #cd486b;
+}
+
+.yt a:hover {
+	color: #F00;
+}
+
+.md a:hover {
+	color: #00ab72;
+}
+
+/* Here LI stands for LINKEDIN */
+.li a:hover {
+    color: #08131a;
+}
+
+.socialItem {
+	font-size: 30px;
+}
+
+.social .social-ig {
+    
+}
+.social .social-yt {
+    
+}
+.social .social-md {
+    
+}
+.social .social-li {
+    
+}
+
+.gridRow {
+    display: grid;
+
+}
