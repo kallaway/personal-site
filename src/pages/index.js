@@ -4,6 +4,8 @@ import styled from 'styled-components'
 
 import styles from './index.module.css'
 
+import Entry from '../components/entry/entry'
+
 const PrimaryButton = styled.button`
   color: orange;
   background-color: blue;
@@ -15,8 +17,6 @@ const FullScreenSection = styled.section`
   display: flex;
 `
 
-const SocialList = styled.ul``
-
 const IndexPage = () => (
 	<div className={styles.source}>
 
@@ -27,7 +27,9 @@ const IndexPage = () => (
 		
 
 		<section className={styles.choiceContainer}>
-			<div className={styles.initialMessage}>Wake up, Neo...</div>
+
+			<Entry content="Wake up, Neo..." />
+			{/* <div className={styles.initialMessage}>Wake up, Neo...</div> */}
 
 			<div className={styles.hands}>
 				<Link to="/realworld" className={styles.redPillLink}><div className={styles.redPill}></div></Link> 

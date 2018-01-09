@@ -8,6 +8,8 @@
 .source {
 	color: #7FF709;
 	font-family: "Roboto Mono", "Droid Sans Mono", "Inconsolata", monospace;
+
+	margin-top: 200px;
 }
 
 .description {
@@ -44,7 +46,7 @@
 }
 
 .redPill {
-	margin: 20px;
+	margin: 40px;
 	width: 150px;
 	height: 50px;
 	/* background-color: red; */
@@ -74,7 +76,7 @@
 
 
 .bluePill {
-	margin: 20px;
+	margin: 40px;
 	width: 150px;
 	height: 50px;
 	/* background-color: blue; */

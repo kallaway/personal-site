@@ -10,11 +10,16 @@ class Prompt extends Component {
 		this.super(props) // why does it want 'this' here?
 	}
 
+	componentDidMount() {
+		// put focus in the input as soon as component renders
+		this.refs.promptInput.focus()
+	}
+
 	render() {
 		return (
 			<div className={styles.prompt}>
 				<span>> </span>
-				<input className={styles.terminput} onSubmit={() => this.props.respond() } />
+				<input ref='promptInput' className={styles.terminput} onKeyPress={(e) => this.props.respond(e) } />
 				{/* {children} */}
 			</div>
 		)

@@ -10,17 +10,12 @@ class Entry extends Component {
 		this.state = {
 			displayedContent: ''
 		}
-
-		const speed = 50
 	}
-
 
 	componentDidMount() {
 		let contentDelayed = this.props.content.split('').reverse()
-		let timer = 0
-		let speed = 25
+		const speed = 30
 
-		// for (let i = 0; i < contentDelayed.length; i++) {
 		let entry = this
 		let writingSequence = setInterval(function () {
 			let incrementedContent = entry.state.displayedContent + contentDelayed.pop()

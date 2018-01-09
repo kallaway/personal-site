@@ -1,4 +1,9 @@
 .realworld {
 	background: #000;
 	color: #7FF709;
+
+	height: 100%;
+	width: 100%;
+	position: absolute;
+
 }
