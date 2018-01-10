@@ -1,3 +1,16 @@
+
+.portrait {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+.bio {
+	text-align: center;
+	font-size: 36px;
+	line-height: 1;
+}
+
 .social ul {
     list-style-type: none;
     /* display: inline-block; */

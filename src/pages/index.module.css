@@ -8,8 +8,11 @@
 .source {
 	color: #7FF709;
 	font-family: "Roboto Mono", "Droid Sans Mono", "Inconsolata", monospace;
-
 	margin-top: 200px;
+}
+
+.initialEntry {
+	text-align: left;
 }
 
 .description {
@@ -18,7 +21,6 @@
 }
 
 .initialMessage {
-	margin-top: 150px;
 	font-size: 1.5rem;
 	margin-bottom: 50px;
 }
@@ -28,6 +30,7 @@
 	text-align: center;
 	/* color: #fff; */
 
+	padding-top: 150px;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -57,12 +60,8 @@
 	-webkit-transition: width 1s;
 	/* Safari */
 	transition: width 1s;
-
-
 	opacity: 0.9;
 }
-
-
 
 .redPillLink {
 	-webkit-transition: width 1s;
@@ -72,8 +71,6 @@
 .redPillLink:hover .redPill {
 		margin-bottom: 40px;
 }
-
-
 
 .bluePill {
 	margin: 40px;

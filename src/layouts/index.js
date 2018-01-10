@@ -58,6 +58,9 @@ const TemplateWrapper = ({ children }) => (
 				{ name: 'keywords', content: 'Kallaway, Do The Opposite, 100DaysOfCode, 100DaysOfX, Alexander Kallaway' },
 			]}
 		/>
+		{/* {
+			(this.props.location.pathname !== '/') || (this.props.location.pathname !== '/realworld') ? '' : <Header />
+		} */}
 		{/* <Header /> */}
 	
 		{/* <div
