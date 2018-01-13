@@ -1,4 +1,19 @@
 
+.profile {
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+}
+
+.mainInfo {
+	width: 65%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
 .portrait {
 	width: 200px;
 	height: 200px;

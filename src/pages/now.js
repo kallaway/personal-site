@@ -9,11 +9,8 @@ const NowPage = () => (
 		<p>What Am I Up To Now?</p>
 
 		<div className="proj-card">
-			<div className="proj-name">
-				#100DaysOfCode Challenge Official Website
-			</div>
-			<div className="proj-desc">
-			</div>
+			<div className="proj-name">#100DaysOfCode Challenge Official Website</div>
+			<div className="proj-desc" />
 		</div>
 	</div>
 )

@@ -49,7 +49,9 @@ const Header = () => (
 	</div>
 )
 
-const TemplateWrapper = ({ children }) => (
+const location = window.location
+
+const TemplateWrapper = ({ children }, location) => (
 	<div>
 		<Helmet
 			title="Alexander Kallaway - Developer, Maker"

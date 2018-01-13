@@ -1,5 +1,4 @@
 export default {
-
 	// add EVERYWHERE:
 	// if user clicks anywhere on realworld page, the focus is put on the input
 	// if user does combination CTRL+K the input is cleared
@@ -29,14 +28,15 @@ export default {
 	],
 
 	responses: {
-		'start': 'For a list of available commands, type \'cmd\' and hit Enter',
-		'about': 'This site is made with GatsbyJS (using ReactJS, ES6, CSS Modules, and more)',
-		'cmd': `Available commands:
+		start: 'For a list of available commands, type \'cmd\' and hit Enter',
+		about:
+			'This site is made with GatsbyJS (using ReactJS, ES6, CSS Modules, and more)',
+		cmd: `Available commands:
 				[about] 
 				[bio] [clear] [contact] [skills] [social] [portfolio] [quote]`,
-		'bio': `Web Dev. freeCodeCamp Toronto Org
+		bio: `Web Dev. freeCodeCamp Toronto Org
 			more info.`,
-		'skills': `
+		skills: `
 					Tech Stack: HTML5, CSS3, SCSS, ReactJS, Redux, git.
 					Familiar with: Node.js, Golang, D3.js, Python, Haxe, OpenFL, Python, THREE.js, PHP.`
 	},
@@ -75,9 +75,9 @@ export default {
 			responseEntry.content = this.responses.about
 			break
 		case 'clear':
-		// TEMPORARY. Later make it so it just hides them?
+			// TEMPORARY. Later make it so it just hides them?
 			newTermEntries = [
-				{ 
+				{
 					type: 'response',
 					content: this.responses.start
 				}
@@ -113,7 +113,8 @@ export default {
 		case 'troll':
 			break
 		default:
-			responseEntry.content = 'Command not found. Don\'t worry, it\'s probably just a gli//gliT~`tch in the Matrix-/trixxtrix.'
+			responseEntry.content =
+					'Command not found. Don\'t worry, it\'s probably just a gli//gliT~`tch in the Matrix-/trixxtrix.'
 			// newTermEntries.push({
 			// 	type: 'response',
 			// 	content: 'Command not found. Don\'t worry, it\'s probably just a gli//gliT~`tch in the Matrix-/trixxtrix.'

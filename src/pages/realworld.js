@@ -12,6 +12,8 @@ const RealWorld = () => (
 		{/* <p>Welcome to the real world</p> */}
 
 		<Terminal />
+
+		<Link className={styles.goback} to="/">Go Back</Link>
 	</div>
 )
 

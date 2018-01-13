@@ -47,19 +47,19 @@ class Terminal extends Component {
 		return (
 			<div style={{ margin: '3rem auto' }}>
 				<div className={styles.display}>
-					{
-						this.state.entries.map((entry, i) => {
-							return <Entry 
-								key={entry.content+'-'+i}
+					{this.state.entries.map((entry, i) => {
+						return (
+							<Entry
+								key={entry.content + '-' + i}
 								content={entry.content}
 								type={entry.type}
 							/>
-						})
-					}
+						)
+					})}
 					<Prompt respond={this.handleCommand} />
 				</div>
 				{this.props.children}
-			</div >
+			</div>
 		)
 	}
 }

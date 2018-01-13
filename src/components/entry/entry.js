@@ -28,7 +28,6 @@ class Entry extends Component {
 			// they will have to be handled here
 			let contentDelayed = this.props.content.split('').reverse()
 			
-			
 			let writingSequence = setInterval(function () {
 				let incrementedContent = entry.state.displayedContent + contentDelayed.pop()
 				entry.setState({
