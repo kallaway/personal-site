@@ -85,40 +85,18 @@ export default {
 			break
 		case 'cmd':
 			responseEntry.content = this.responses.cmd
-			// newTermEntries = [
-			// 	...entries,
-			// 	{
-			// 		type: 'response',
-			// 		content: this.responses.cmd
-			// 	}
-			// ]
 			break
 		case 'quote':
 			responseEntry.content = this.getRandomQuote()
-			// newTermEntries.push({
-			// 	type: 'response',
-			// 	content: this.getRandomQuote()
-			// })
 			break
 		case 'lol':
 			responseEntry.content = '😂'
-			// newTermEntries = [
-			// 	...entries,
-			// 	{
-			// 		type: 'response',
-			// 		content: '😂'
-			// 	}
-			// ]
 			break
 		case 'troll':
 			break
 		default:
 			responseEntry.content =
 					'Command not found. Don\'t worry, it\'s probably just a gli//gliT~`tch in the Matrix-/trixxtrix.'
-			// newTermEntries.push({
-			// 	type: 'response',
-			// 	content: 'Command not found. Don\'t worry, it\'s probably just a gli//gliT~`tch in the Matrix-/trixxtrix.'
-			// })
 		}
 
 		if (responseEntry.content) {

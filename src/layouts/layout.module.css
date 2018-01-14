@@ -1,0 +1,18 @@
+.mainNav {
+}
+
+.mainNav ul {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+}
+
+.mainNav ul li {
+	margin: 0;
+}
+
+.mainNav ul li a {
+	color: #fff;
+	text-decoration: none;
+	margin: 0 10px;
+}

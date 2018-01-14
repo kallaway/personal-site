@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 const Projects = () => (
 	<div>
-		<Link to="/">Go back to the homepage</Link>
+		{/* <Link to="/">Go back to the homepage</Link> */}
 
 		<h1>Projects</h1>
 		<p>Here are some projects I've created</p>
@@ -29,6 +29,10 @@ const Projects = () => (
 				<li>https://www.norwall.com/ Continuous maintenance and fixes.</li>
 			</ul>
 		</section>
+
+		<section />
+
+		<p>In-depth experience with platforms: BigCommerce, Shopify, WordPress</p>
 
 		<section>
 			<h3>Tech Stack</h3>

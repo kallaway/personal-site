@@ -1,7 +1,5 @@
 import Typography from 'typography'
 
-// const typography = new Typography({ baseFontSize: "18px" });
-
 const typography = new Typography({
 	baseFontSize: '180px',
 	baseLineHeight: 1.45,

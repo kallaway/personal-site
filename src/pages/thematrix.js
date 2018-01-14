@@ -7,12 +7,6 @@ import portrait from '../static/img/kallaway_portrait.png'
 
 import styles from './thematrix.module.css'
 
-// const PrimaryButton = styled.button`
-//   color: orange;
-//   background-color: blue;
-//   font-size: 1em;
-// `
-
 const PortraitImg = () => {
 	return (
 		<img
@@ -28,21 +22,6 @@ const PortraitImg = () => {
 
 const TheMatrix = () => (
 	<div>
-		{/* this should be a separate component */}
-		<section className={styles.nav}>
-			<ul>
-				<li>
-					<Link to="/">Home</Link>
-				</li>
-				<li>
-					<Link to="/resume">Resume</Link>
-				</li>
-				<li>
-					<Link to="/now">Now</Link>
-				</li>
-			</ul>
-		</section>
-
 		<section className={styles.profile}>
 			<PortraitImg />
 			<div className={styles.mainInfo}>
@@ -62,8 +41,6 @@ const TheMatrix = () => (
 				</div>
 			</div>
 		</section>
-
-		{/* <PrimaryButton>Button Button click on me</PrimaryButton> */}
 
 		<section className={styles.social}>
 			<ul>
@@ -106,7 +83,9 @@ const TheMatrix = () => (
 			</p>
 		</section>
 
-		<p>In-depth experience with platforms: BigCommerce, Shopify, WordPress</p>
+		<section className={styles.sectionContainer}>
+			{/* <ProjectCard /> */}
+		</section>
 
 		<p>
 			I've created the #100DaysOfCode challenge initially to ensure that I learn
@@ -137,8 +116,6 @@ const TheMatrix = () => (
 		<section className="about-me">
 			<div />
 		</section>
-
-		<Link to="/about/">About</Link>
 	</div>
 )
 
