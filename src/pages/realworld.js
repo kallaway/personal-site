@@ -1,20 +1,30 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Link from 'gatsby-link'
 
 import Terminal from '../components/terminal/terminal'
-
 import styles from './realworld.module.css'
 
-const RealWorld = () => (
-	<div className={styles.realworld}>
-		{/* <Link to="/">Go back to the homepage</Link> */}
+class RealWorld extends Component {
+	constructor(props) {
+		super(props)
+	}
 
-		{/* <p>Welcome to the real world</p> */}
+	// handleClick
 
-		<Terminal />
+	render() {
+		return (
+			<div className={styles.realworld}>
+				<Terminal />
+				<Link className={styles.goback} to="/">
+					Go Back
+				</Link>
+			</div>
+		)
+	}
+}
 
-		<Link className={styles.goback} to="/">Go Back</Link>
-	</div>
-)
+// const RealWorld = () => (
+
+// )
 
 export default RealWorld

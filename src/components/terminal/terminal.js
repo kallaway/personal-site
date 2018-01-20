@@ -30,17 +30,13 @@ class Terminal extends Component {
 		this.handleCommand = this.handleCommand.bind(this)
 	}
 
-	handleCommand(e) {
+	handleCommand(cmd) {
 		let entries = this.state.entries
-		if (e.key === 'Enter') {
-			// clear input
-
-			// run command
-			let updatedEntries = TermLogic.runCommand(e.target.value, entries)
-			this.setState({
-				entries: updatedEntries
-			})
-		}
+		// run command
+		let updatedEntries = TermLogic.runCommand(cmd, entries)
+		this.setState({
+			entries: updatedEntries
+		})
 	}
 
 	render() {

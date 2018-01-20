@@ -1,6 +1,5 @@
 export default {
 	// add EVERYWHERE:
-	// if user clicks anywhere on realworld page, the focus is put on the input
 	// if user does combination CTRL+K the input is cleared
 	// add visible or not to Entry component
 	quotes: [
@@ -34,7 +33,7 @@ export default {
 		cmd: `Available commands:
 				[about] 
 				[bio] [clear] [contact] [skills] [social] [portfolio] [quote]`,
-		bio: `Web Dev. freeCodeCamp Toronto Org
+		bio: `My name is Alex Kallaway. I am a Self-Taught Web Developer. freeCodeCamp Toronto Org
 			more info.`,
 		skills: `
 					Tech Stack: HTML5, CSS3, SCSS, ReactJS, Redux, git.
@@ -48,6 +47,8 @@ export default {
 
 	// find ways to make these functions shorter
 	runCommand(cmd, entries) {
+		console.log('received command:')
+		console.log(cmd)
 		// let entries = this.state.entries
 		let newTermEntries = entries
 		// separate function - push command to history
@@ -64,6 +65,7 @@ export default {
 			type: 'response'
 		}
 
+		// there might be a way to improve this by using a function?
 		switch (cmd) {
 		// we can push one more entry to state? I think. Also
 		// maybe add whether an entry is visible or not
@@ -73,6 +75,9 @@ export default {
 		// precreate an answer with type? response?
 		case 'about':
 			responseEntry.content = this.responses.about
+			break
+		case 'bio':
+			responseEntry.content = this.responses.bio
 			break
 		case 'clear':
 			// TEMPORARY. Later make it so it just hides them?
@@ -92,7 +97,8 @@ export default {
 		case 'lol':
 			responseEntry.content = '😂'
 			break
-		case 'troll':
+		case 'skills':
+			responseEntry.content = this.responses.skills
 			break
 		default:
 			responseEntry.content =
