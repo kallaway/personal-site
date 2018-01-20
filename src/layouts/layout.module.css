@@ -16,3 +16,7 @@
 	text-decoration: none;
 	margin: 0 10px;
 }
+
+html {
+	background: linear-gradient(to bottom, #fff 0, #f6f6f6 150px);
+}

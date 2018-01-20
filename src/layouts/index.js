@@ -10,7 +10,8 @@ import styles from './layout.module.css'
 const Header = () => (
 	<div
 		style={{
-			background: 'rebeccapurple',
+			// background: 'rebeccapurple',
+			background: '#001f3f',
 			marginBottom: '1.45rem'
 		}}
 	>

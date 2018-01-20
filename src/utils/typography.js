@@ -4,6 +4,7 @@ const typography = new Typography({
 	baseFontSize: '180px',
 	baseLineHeight: 1.45,
 	headerFontFamily: [
+		'Comic Sans MS',
 		'Avenir Next',
 		'Helvetica Neue',
 		'Segoe UI',

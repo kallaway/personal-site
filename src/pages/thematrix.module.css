@@ -52,6 +52,9 @@
 .ig a:hover {
 	color: #cd486b;
 }
+.gh a:hover {
+	color: #4078c0;
+}
 
 .yt a:hover {
 	color: #f00;

@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 
 import styles from './prompt.module.css'
 
-
 // respond - function to handleCommand
 
 class Prompt extends Component {
@@ -19,7 +18,11 @@ class Prompt extends Component {
 		return (
 			<div className={styles.prompt}>
 				<span>> </span>
-				<input ref='promptInput' className={styles.terminput} onKeyPress={(e) => this.props.respond(e) } />
+				<input
+					ref="promptInput"
+					className={styles.terminput}
+					onKeyPress={e => this.props.respond(e)}
+				/>
 				{/* {children} */}
 			</div>
 		)

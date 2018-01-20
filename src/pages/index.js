@@ -1,15 +1,15 @@
-import React from "react";
-import Link from "gatsby-link";
-import styled from "styled-components";
-import Entry from "../components/entry/entry";
+import React from 'react'
+import Link from 'gatsby-link'
+import styled from 'styled-components'
+import Entry from '../components/entry/entry'
 
-import styles from "./index.module.css";
+import styles from './index.module.css'
 
 const PrimaryButton = styled.button`
 	color: orange;
 	background-color: blue;
 	font-size: 1em;
-`;
+`
 
 const IndexPage = () => (
 	<div className={styles.source}>
@@ -19,7 +19,12 @@ const IndexPage = () => (
 		</div> */}
 
 		<section className={styles.choiceContainer}>
-			<Entry className={styles.initialEntry} content="Wake up, Neo..." />
+			<div className={styles.initialEntryContainer}>
+				<Entry
+					className={styles.initialEntry}
+					content="Wake up, Neo... The time has come to make a choice."
+				/>
+			</div>
 			<div className={styles.hands}>
 				<Link to="/realworld" className={styles.redPillLink}>
 					<div className={styles.redPill} />
@@ -32,6 +37,6 @@ const IndexPage = () => (
 
 		{/* <Link to="/about/">About</Link> */}
 	</div>
-);
+)
 
-export default IndexPage;
+export default IndexPage

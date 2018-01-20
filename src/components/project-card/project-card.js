@@ -2,13 +2,16 @@ import React, { Component } from 'react'
 
 import styles from './project-card.module.css'
 
-const ProjectCard = () => {
+// props:
+// title
+// description
+// name
+
+const ProjectCard = props => {
 	return (
 		<div className={styles.projectCard}>
-			<div className={styles.projName}>
-				#100DaysOfCode Challenge Official Website
-			</div>
-			<div className={styles.projDesc}>smth else</div>
+			<div className={styles.projName}>Name: {props.name}</div>
+			<div className={styles.projDesc}>{props.description}</div>
 		</div>
 	)
 }

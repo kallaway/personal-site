@@ -1,0 +1,12 @@
+.gridRowThreeContainer {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+
+	height: 100%;
+}
+
+.gridRowThreeContainer > div {
+	/* grid-column: 1 / 3;
+	grid-row: 1 / 3; */
+}
